@@ -1,0 +1,98 @@
+html{
+  background: url("/ooad_book/img/bgvi.jpg");
+  background-size: cover;
+}
+
+body{
+  margin:0;
+
+}
+
+.container{
+  position: relative;
+  width:500px;
+  height:400px;
+  text-align: center;
+  background-color: rgba(52,73 , 94, 0.7);
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.container img{
+  width:120px;
+  height:120px;
+  margin-top:-60px;
+  margin-bottom: 30px;
+}
+
+.container h3{
+  color:#ffffff;
+  font-family: sans-serif;
+  text-shadow: 1px 1px #d7dae0;
+  letter-spacing:2px;
+}
+
+.container h3::before,
+.container h3::after{
+  content: "";
+  background: grey;
+  height: 1px;
+  position: absolute;
+  width: 25%;
+  margin: 9px;
+}
+
+.container h3::before{
+  left: 0;
+}
+
+.container h3::after{
+  right: 0;
+}
+
+.container::before,
+.container::after{
+  position: absolute;
+  content: "";
+  width:100%;
+  height:100%;
+  background-color: rgba(52,73 , 94, 0.7);
+  left: -1px;
+  top: 0;
+}
+
+.container::before{
+transform: rotate(2deg);
+z-index: -1;
+}
+
+.container::after{
+transform: rotate(-3deg);
+z-index: -2;
+}
+
+input[type="text"], input[type="password"]{
+  height:45px;
+  width:300px;
+  font-size:18px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left: 20px;
+
+}
+
+
+.btn{
+  margin-top: 20px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  background-color: #e5a122;
+  border:none;
+  cursor:pointer;
+  color:white;
+}
+
+.btn:hover{
+  box-shadow: 2px 2px #c17e00;
+  font-weight: bolder;
+}
